@@ -140,3 +140,42 @@ $('body').on('click', '#signin-link', function() {
     $('.signin-flex').show();
 })
 */
+
+/* Dropdown menu on right sidebar of algorithms listing */
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropDown() {
+    document.getElementById("sortDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("sortDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+
+/* TO DO: only (this) div should hide/show */
+
+$(document).ready(function() {
+        $('.collapse').hide();
+        $('.algo-box-img').hide();
+    });
+
+$('body').on('click', '.expand', function() {
+        $('.expand').hide();
+        $('.collapse').show();
+        $('.algo-box-img').show();
+    })
+
+
+
+$('body').on('click', '.collapse', function() {
+    $('.collapse').hide();
+    $('.expand').show();
+    $('.algo-box-img').hide();
+})

@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+    font-family: 'Arimo', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+   }
+
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+}
+.search-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search-input {
+    font-family: inherit;
+    color: black;
+    height: 50px;
+    width: 300px;
+    background-color: lightgray;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin: 10px 10px;
+    border:none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.search-button {
+    font-family: inherit;
+    height: 50px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    padding:0px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    margin:10px 10px;
+    background-color: #004d62; 
+    border:none; 
+    outline:none;
+    cursor: pointer;
+  }
+
+/* Everything related to the search results/listing */
+
+  .algo-body {
+    display: flex;
+    height: 90vh;
+  }
+
+  .algo-listing {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 15px;
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    }
+
+
+  .algo-box {
+      background-color: lightgray;
+      border-radius: 2px;
+      margin: 10px 10px 10px 10px;
+      padding: 10px 10px;
+      width: 450px;
+  }
+
+
+  .pill-box {
+      display: flex;
+  }
+
+  .pill-box-item {
+      background-color: darkgray;
+      padding:10px 7px;
+      margin: 3px 3px;
+  }
+
+  .dev-summary {
+      display: flex;
+      font-size: 0.8em;
+  }
+
+  .dev-summary p {
+      padding: 0px 5px;
+  }
+
+/* Everything related to the right sidebar */
+
+  .right-sidebar {
+    display:flex;
+    flex-direction: column;
+    flex: 0 0 320px;
+  }
+
+  .right-sidebar h3 {
+    align-self: flex-start;
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+
+  .algo-cat {
+    background-color: darkgrey;
+    color: white;
+    padding:2px 2px;
+    margin: 2px 2px;
+}
+
+.new-algo-cat {
+    font-family: inherit;
+    background-color: darkgray;
+    color: black;
+    font-size: 16px;
+    padding:3px 3px;
+    margin: 25px 2px 0px 2px;
+    border:none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    align-content: space-between;
+    background-color: lightgray;
+    border-radius: 2px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.tag-box {  
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .footer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    letter-spacing: 1px;
+    margin: 5px 5px;
+}
+.footer-li {
+    align-self: center;
+  }
+
+.footer-li p {
+  margin-bottom: 0;
+}
+.footer-terms {
+    align-self: center;
+}
+.footer-terms p {
+    margin:5px 2px 2px 2px;
+    font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+/*displaying the icons and categories on the Algorithm page right sidebar */
+.cat-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex: 1 0 auto;
+    
+}
+
+.cat-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px;
+    height: 40px;
+}
+
+.cat-img {
+    margin: 3px 5px;
+}
+
+.right-sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    align-content: flex-end;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .algo-body {
+      flex-wrap: wrap
+    }
+}
